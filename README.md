@@ -10,19 +10,23 @@ Implementation of Luhn Algorithm in credit card
 
 # How To Use
 * Open luhn_alg.py using python
+
 	```sh
 	$ python luhn_alg.py
 	```
 * Input number of cards to be checked (i.e. 2) and press Enter
+	
 	```python
 	Jumlah Kartu > 2
 	```
 * Input credit card number to be checked and press Enter
+	
 	```python
 	Kartu 1> 4111-1111-1111-1111
 	Kartu 2> 4111-1111-1111-11?2
 	```
 * After that the program will show you the numbers of the valid credit card number from the input
+	
 	```python
 	Output Kartu 1> 1
 	Output Kartu 2> 1
@@ -32,6 +36,7 @@ Implementation of Luhn Algorithm in credit card
 * Suppose the credit card number is 4111-1111-1111-1111
 * For every number in even position double it
 * If the number bigger than 9 do the number modulo with 10 and add it by 1
+    
     | Position             | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |
   	|----------------------|---|---|---|---|---|---|---|---|---|---|----|----|----|----|----|----|
     | Credit Card Number   | 4 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1  | 1  | 1  | 1  | 1  | 1  |
