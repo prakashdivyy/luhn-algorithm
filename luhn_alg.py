@@ -8,6 +8,11 @@ for x in range(0, card_num):
     odd_add = 0
     even_add = 0
     count = 0
+    """ 
+    - Double value in even position and add it to even_add
+    - If doubled value > 9 do doubled value mod 10 + 1
+    - Add value in odd position to odd_add
+	"""
     while (y < len(credit_card)):
     	if(credit_card[y] == '?'):
     		wildcard += 1
@@ -20,6 +25,11 @@ for x in range(0, card_num):
     		else:
     			odd_add += int(credit_card[y])
     	y+=1
+    """ 
+    - Add odd position and even position as total
+    - Add total with generated number from the loop
+    - if valid count add by 1
+	"""
     if (wildcard>0):
     	if(wildcard == 1):
     		for a in range(0,10):
